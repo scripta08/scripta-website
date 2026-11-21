@@ -1,0 +1,180 @@
+# 훈민정음학회 홈페이지 관리 화면(Decap CMS) 설정
+# 배포할 때 repo와 base_url을 학회 GitHub 조직 저장소와 로그인 연결 주소로 바꿉니다.
+backend:
+  name: github
+  repo: scripta08/scripta-website
+  branch: main
+  base_url: https://AUTH-WORKER.example # [GitHub 로그인 연결용 주소로 교체]
+local_backend: true
+locale: ko
+site_url: https://www.scripta.kr
+display_url: https://www.scripta.kr
+media_folder: src/files/uploads
+public_folder: /files/uploads
+slug: { encoding: ascii, clean_accents: true }
+
+collections:
+  - name: society
+    label: 학회 정보 (임원·편집위원·연락처)
+    description: 임원진이 바뀌면 여기만 고치면 됩니다. 머리말·바닥글·학회 조직·연락처·인사말 서명에 함께 반영됩니다.
+    files:
+      - name: society
+        label: 학회 정보
+        file: src/_data/society.json
+        fields:
+          - { name: _안내, label: 안내, widget: hidden }
+          - label: 임기
+            name: term
+            widget: object
+            fields: [ { name: ko, label: 국문 }, { name: en, label: 영문 } ]
+          - label: 회장
+            name: president
+            widget: object
+            fields:
+              - { name: name_ko, label: 이름(국문) }
+              - { name: name_en, label: 이름(영문) }
+              - { name: affiliation_ko, label: 소속(국문) }
+              - { name: affiliation_en, label: 소속(영문) }
+          - label: 회장 인사말
+            name: greeting
+            widget: object
+            fields:
+              - { name: ko, label: 인사말(국문), widget: markdown }
+              - { name: en, label: 인사말(영문), widget: markdown }
+              - { name: date_ko, label: 날짜(국문), hint: "예: 2026년 1월" }
+              - { name: date_en, label: 날짜(영문), hint: "예: January 2026" }
+          - label: 임원진
+            name: officers
+            widget: list
+            summary: "{{fields.role_ko}}"
+            fields:
+              - { name: role_ko, label: 직책(국문) }
+              - { name: role_en, label: 직책(영문) }
+              - label: 사람
+                name: people
+                widget: list
+                summary: "{{fields.name_ko}} ({{fields.affiliation_ko}})"
+                fields:
+                  - { name: name_ko, label: 이름(국문) }
+                  - { name: name_en, label: 이름(영문), required: false }
+                  - { name: affiliation_ko, label: 소속(국문), required: false }
+                  - { name: affiliation_en, label: 소속(영문), required: false }
+          - label: SCRIPTA 편집위원회
+            name: editorial_board
+            widget: object
+            fields:
+              - { name: term, label: 임기 }
+              - label: 편집위원장(Editors)
+                name: editors
+                widget: list
+                summary: "{{fields.name}}"
+                fields: [ { name: name, label: 이름 }, { name: affiliation, label: 소속 } ]
+              - label: 편집위원(Editorial Board)
+                name: members
+                widget: list
+                summary: "{{fields.name}}"
+                fields: [ { name: name, label: 이름 }, { name: affiliation, label: 소속 } ]
+          - label: 연락처
+            name: contact
+            widget: object
+            fields:
+              - { name: person_ko, label: 연락 담당(국문) }
+              - { name: person_en, label: 연락 담당(영문) }
+              - { name: postcode, label: 우편번호 }
+              - { name: address_ko, label: 주소(국문) }
+              - { name: address_en, label: 주소(영문) }
+              - { name: phone, label: 전화, required: false }
+              - { name: email_submission, label: 논문 투고 이메일 }
+              - { name: email_membership, label: 입회 문의 이메일 }
+              - { name: email_general, label: 일반 문의 이메일, required: false }
+
+  - name: notices
+    label: 알림마당
+    label_singular: 공지
+    folder: src/notices
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}{{minute}}"
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: 제목 }
+      - { name: date, label: 게시일, widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - { name: body, label: 본문, widget: markdown }
+      - label: 첨부파일
+        name: files
+        widget: list
+        required: false
+        summary: "{{fields.label}}"
+        fields: [ { name: label, label: 파일 이름 }, { name: file, label: 파일, widget: file } ]
+
+  - name: conferences
+    label: 학술대회
+    label_singular: 학술대회
+    folder: src/conferences
+    create: true
+    slug: "{{fields.date_slug}}"
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: 학술대회 이름 }
+      - { name: date, label: 개최일, widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - { name: date_slug, label: 주소용 이름, hint: "예: 2027-international (영문·숫자·하이픈만)", widget: string }
+      - { name: kind, label: 구분, widget: select, options: [ { label: 국제학술대회, value: international }, { label: 전국학술대회, value: domestic } ] }
+      - { name: body, label: 안내·프로그램, widget: markdown }
+      - label: 발표논문집·자료
+        name: files
+        widget: list
+        required: false
+        summary: "{{fields.label}}"
+        fields: [ { name: label, label: 파일 이름 }, { name: file, label: 파일(PDF), widget: file } ]
+
+  - name: scripta
+    label: 학술지 SCRIPTA 권호
+    label_singular: 권호
+    folder: src/scripta
+    create: true
+    slug: "vol-{{fields.volume_padded}}"
+    sortable_fields: [volume]
+    summary: "Vol. {{volume}} ({{year}})"
+    fields:
+      - { name: volume, label: 권, widget: number, value_type: int }
+      - { name: volume_padded, label: 주소용 권 번호, hint: "두 자리로: 12권이면 12, 5권이면 05", widget: string }
+      - { name: year, label: 발행 연도, widget: number, value_type: int }
+      - { name: month, label: 발행 월(영문), default: October }
+      - { name: date, label: 정렬용 날짜, widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - label: 수록 논문
+        name: articles
+        widget: list
+        summary: "{{fields.author}} — {{fields.title}}"
+        fields:
+          - { name: kind, label: 종류, widget: select, options: [ { label: 논문, value: article }, { label: 표지·목차, value: front } ], default: article }
+          - { name: author, label: 저자, required: false }
+          - { name: title, label: 제목 }
+          - { name: pdf, label: PDF, widget: file }
+      - { name: body, label: 안내 문구(선택), widget: markdown, required: false }
+
+  - name: pages_ko
+    label: 고정 페이지(국문)
+    folder: src/pages/ko
+    create: false
+    delete: false
+    fields:
+      - { name: title, label: 제목 }
+      - { name: body, label: 본문, widget: markdown }
+      - label: 첨부파일
+        name: files
+        widget: list
+        required: false
+        fields: [ { name: label, label: 파일 이름 }, { name: file, label: 파일, widget: file } ]
+
+  - name: pages_en
+    label: 고정 페이지(영문)
+    folder: src/pages/en
+    create: false
+    delete: false
+    fields:
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
+      - label: Files
+        name: files
+        widget: list
+        required: false
+        fields: [ { name: label, label: Label }, { name: file, label: File, widget: file } ]

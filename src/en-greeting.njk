@@ -1,0 +1,9 @@
+---
+layout: inner.njk
+lang: en
+title: "President's Message"
+permalink: /en/about/greeting/
+---
+{%- set G = society.greeting -%}{%- set Pr = society.president -%}
+<div class="prose">{{ G.en | md | safe }}</div>
+<p class="serif" style="margin-top:36px;text-align:right;font-size:17px;line-height:1.9">{{ G.date_en }}<br>{% if lang == "en" %}{{ Pr.name_en }}, President of the Hunmin jeongeum Society{% else %}사단법인 훈민정음학회 회장 {{ Pr.name_ko }}{% endif %}</p>

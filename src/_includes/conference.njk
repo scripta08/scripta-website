@@ -1,0 +1,12 @@
+---
+layout: base.njk
+---
+<section class="page"><div class="wrap">
+  <aside class="lnb"><h2>학술대회 · Conferences</h2><a href="/conferences/">국문 목록</a><a href="/en/conferences/">English list</a></aside>
+  <article class="content">
+    <p class="eyebrow">{{ date | year }} · {{ i18n.ko[kind] }} / {{ i18n.en[kind] }}</p>
+    <h1 style="margin-top:8px">{{ title }}</h1>
+    <div class="prose">{{ content | safe }}</div>
+    {%- if files and files.length %}<h2 class="serif" style="font-size:22px;margin:40px 0 0">발표논문집 · Proceedings</h2><div class="files" style="margin-top:12px">{% for f in files %}<a href="{{ f.file }}"><span>{{ f.label }}</span><span>PDF</span></a>{% endfor %}</div>{% endif %}
+  </article>
+</div></section>

@@ -1,0 +1,17 @@
+{
+  "type": "module",
+  "name": "scripta-website",
+  "version": "1.0.0",
+  "description": "훈민정음학회 홈페이지 (Eleventy static site)",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.8"
+  }
+}

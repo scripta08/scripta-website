@@ -1,0 +1,13 @@
+---
+layout: inner.njk
+lang: ko
+title: "학술지 SCRIPTA"
+permalink: /scripta/
+---
+<div class="prose">{{ (collections.all | byPath("pages/ko/scripta-about")).templateContent | safe }}</div>
+<div class="listhead" style="margin-top:36px"><h3>{{ i18n.ko.past_issues }}</h3></div>
+<ul class="rows">
+{%- for v in collections.volumes %}
+  <li><span class="vol">Vol. {{ v.data.volume }}</span><span class="grow" style="color:var(--ink2)">{{ v.date | ymKo }}</span><a class="acc" href="{{ v.url }}">{{ i18n.ko.toc }}</a></li>
+{%- endfor %}
+</ul>

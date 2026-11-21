@@ -1,0 +1,60 @@
+---
+layout: base.njk
+---
+{%- set L = i18n[lang] -%}
+{%- set latest = collections.conferences[0] -%}
+{%- set en = lang == "en" -%}
+<section class="hero"><div class="wrap">
+  <div class="main">
+    <p class="eyebrow">{{ L.intro }}</p>
+    {% if en %}<h1>Exploring the value of Hunmin jeongeum,<br>and the writing systems of the world.</h1>
+    <p class="lead">Founded on Hangeul Day 2007, the Hunmin jeongeum Society studies human writing systems, including Hunmin jeongeum, and helps communities whose languages lack a script to adopt one suited to their language. It publishes the journal <i>SCRIPTA</i> and holds conferences every year.</p>
+    {% else %}<h1>훈민정음의 문자학적 가치를 밝히고,<br>세계의 여러 문자를 두루 연구합니다.</h1>
+    <p class="lead">훈민정음학회는 훈민정음을 비롯한 인류의 문자 체계를 연구하고, 문자가 없는 언어 공동체에 알맞은 표기 체계를 마련하는 일을 돕기 위해 2007년 한글날에 창립되었습니다. 학술지 『SCRIPTA』를 펴내고 해마다 국내외 학술대회를 엽니다.</p>{% endif %}
+    <div class="btns">
+      <a class="btn solid" href="{{ '/en/about/greeting/' if en else '/about/greeting/' }}">{{ "President's Message" if en else "인사말과 연혁" }}</a>
+      <a class="btn" href="{{ '/en/membership/' if en else '/join/' }}">{{ "Membership" if en else "입회 안내" }}</a>
+    </div>
+  </div>
+  {%- if latest %}
+  <aside class="card">
+    <p class="eyebrow" style="font-size:13px">{{ L.latest_conf }}</p>
+    <h2>{{ latest.data.title }}</h2>
+    <dl><dt>{{ "Date" if en else "일시" }}</dt><dd>{{ latest.data.date | ymd }}</dd><dt>{{ "Type" if en else "구분" }}</dt><dd>{{ L[latest.data.kind] }}</dd></dl>
+    <a class="more" href="{{ latest.url }}">{{ L.program }}</a>
+  </aside>
+  {%- endif %}
+</div></section>
+
+<section class="band split"><div class="wrap">
+  <div class="side">
+    <p class="eyebrow">{{ L.journal }}</p>
+    <h2 class="serif" style="margin:0;font-size:34px;font-weight:600">SCRIPTA</h2>
+    <div class="prose" style="font-size:16px">{{ (collections.all | byPath("pages/" + lang + "/scripta-about")).templateContent | safe }}</div>
+    <div style="display:flex;flex-direction:column;gap:10px;font-size:15px;font-weight:500">
+      <a href="{{ '/en/scripta/submission/' if en else '/scripta/submission/' }}">{{ "Submission →" if en else "논문 투고 안내 →" }}</a>
+      <a href="{{ '/en/scripta/editorial-board/' if en else '/scripta/editorial-board/' }}">{{ "Editorial Board →" if en else "편집위원회 →" }}</a>
+    </div>
+  </div>
+  <div class="wide">
+    <div class="listhead"><h3>{{ L.past_issues }}</h3><a href="{{ '/en/scripta/' if en else '/scripta/' }}">{{ L.all_issues }}</a></div>
+    <ul class="rows">
+    {%- for v in collections.volumes | take(5) %}
+      <li><span class="vol">Vol. {{ v.data.volume }}</span><span class="grow" style="color:var(--ink2)">{{ (v.data.month ~ " " ~ v.data.year) if en else (v.date | ymKo) }}</span><a class="acc" href="{{ v.url }}">{{ L.toc }}</a></li>
+    {%- endfor %}
+    </ul>
+  </div>
+</div></section>
+
+<section class="split"><div class="wrap">
+  {%- if not en %}
+  <div class="half">
+    <div class="listhead"><h2>{{ L.notices }}</h2><a href="/notices/">{{ L.more }}</a></div>
+    <ul class="rows">{% for n in collections.notices | take(4) %}<li><a href="{{ n.url }}">{{ n.data.title }}</a><span class="date">{{ n.data.date | ymd }}</span></li>{% endfor %}</ul>
+  </div>
+  {%- endif %}
+  <div class="half">
+    <div class="listhead"><h2>{{ L.conf_log }}</h2><a href="{{ '/en/conferences/' if en else '/conferences/' }}">{{ L.from2007 }}</a></div>
+    <ul class="rows lead-yr">{% for c in collections.conferences | take(5) %}<li><span class="yr">{{ c.data.date | year }}</span><a class="grow" href="{{ c.url }}">{{ c.data.title }}</a></li>{% endfor %}</ul>
+  </div>
+</div></section>

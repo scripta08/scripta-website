@@ -1,0 +1,18 @@
+{
+  "ko": { "home": "/", "society": "훈민정음학회", "society_full": "사단법인 훈민정음학회", "sub": "THE HUNMIN JEONGEUM SOCIETY",
+    "nav": [ { "label": "학회 소개", "url": "/about/greeting/", "children": [ {"label":"인사말","url":"/about/greeting/"}, {"label":"설립 목적과 연혁","url":"/about/history/"}, {"label":"학회 조직","url":"/about/organization/"}, {"label":"정관(회칙)","url":"/about/bylaws/"}, {"label":"연락처","url":"/about/contact/"} ] },
+             { "label": "학술지 SCRIPTA", "url": "/scripta/", "children": [ {"label":"학술지 소개·지난 호","url":"/scripta/"}, {"label":"논문 투고 안내","url":"/scripta/submission/"}, {"label":"편집위원회","url":"/scripta/editorial-board/"} ] },
+             { "label": "학술대회", "url": "/conferences/" }, { "label": "알림마당", "url": "/notices/" }, { "label": "입회 안내", "url": "/join/" } ],
+    "other_lang": "English", "other_home": "/en/", "submission": "논문 투고 문의", "membership": "입회 문의", "general": "일반 문의",
+    "latest_conf": "최근 학술대회", "more": "더 보기", "past_issues": "지난 호", "all_issues": "전체 권호 보기", "notices": "알림마당", "conf_log": "학술대회 기록",
+    "from2007": "2007년부터 보기", "toc": "목차 · PDF", "intro": "학회 소개", "journal": "학술지", "program": "자세히 보기 →",
+    "international": "국제학술대회", "domestic": "전국학술대회", "files": "자료", "president": "회장", "term": "임기", "address": "주소", "phone": "전화", "contact_person": "연락 담당" },
+  "en": { "home": "/en/", "society": "The Hunmin jeongeum Society", "society_full": "The Hunmin jeongeum Society", "sub": "훈민정음학회",
+    "nav": [ { "label": "About", "url": "/en/about/greeting/", "children": [ {"label":"President's Message","url":"/en/about/greeting/"}, {"label":"Mission and History","url":"/en/about/history/"}, {"label":"Organization","url":"/en/about/organization/"}, {"label":"Contact","url":"/en/about/contact/"} ] },
+             { "label": "SCRIPTA", "url": "/en/scripta/", "children": [ {"label":"About & Past Issues","url":"/en/scripta/"}, {"label":"Submission","url":"/en/scripta/submission/"}, {"label":"Editorial Board","url":"/en/scripta/editorial-board/"} ] },
+             { "label": "Conferences", "url": "/en/conferences/" }, { "label": "Membership", "url": "/en/membership/" } ],
+    "other_lang": "한국어", "other_home": "/", "submission": "Submissions", "membership": "Membership", "general": "General inquiries",
+    "latest_conf": "Latest Conference", "more": "More", "past_issues": "Past Issues", "all_issues": "All issues", "notices": "Notices", "conf_log": "Conferences",
+    "from2007": "Since 2007", "toc": "Contents · PDF", "intro": "About", "journal": "Journal", "program": "Details →",
+    "international": "International Conference", "domestic": "National Conference", "files": "Files", "president": "President", "term": "Term", "address": "Address", "phone": "Phone", "contact_person": "Contact" }
+}

@@ -1,0 +1,12 @@
+---
+layout: base.njk
+---
+<section class="page"><div class="wrap">
+  <aside class="lnb"><h2>알림마당</h2><a href="/notices/">목록으로</a></aside>
+  <article class="content">
+    <p class="eyebrow">{{ date | ymd }}</p>
+    <h1 style="margin-top:8px">{{ title }}</h1>
+    <div class="prose">{{ content | safe }}</div>
+    {%- if files and files.length %}<div class="files">{% for f in files %}<a href="{{ f.file }}"><span>{{ f.label }}</span><span>내려받기</span></a>{% endfor %}</div>{% endif %}
+  </article>
+</div></section>

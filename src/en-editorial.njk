@@ -1,0 +1,12 @@
+---
+layout: inner.njk
+lang: en
+title: "Editorial Board"
+permalink: /en/scripta/editorial-board/
+---
+{%- set E = society.editorial_board -%}
+<p style="color:var(--muted);margin:-12px 0 24px">{{ i18n.en.term }} {{ E.term }}</p>
+<div class="people">
+  <div class="role">Editors</div><div>{% for p in E.editors %}{{ p.name }} <span style="color:var(--muted)">· {{ p.affiliation }}</span>{% if not loop.last %}<br>{% endif %}{% endfor %}</div>
+  <div class="role">Editorial Board</div><div>{% for p in E.members %}{{ p.name }} <span style="color:var(--muted)">· {{ p.affiliation }}</span>{% if not loop.last %}<br>{% endif %}{% endfor %}</div>
+</div>

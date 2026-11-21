@@ -1,0 +1,437 @@
+{
+  "_안내": "이 파일 하나에 임원·편집위원·연락처가 모여 있습니다. 관리 페이지의 '학회 정보'에서 고치면 사이트 전체(머리말, 바닥글, 학회 조직, 연락처, 인사말 서명)에 함께 반영됩니다.",
+  "term": {
+    "ko": "2026–2027",
+    "en": "2026–2027"
+  },
+  "president": {
+    "name_ko": "이용",
+    "name_en": "Yong Lee",
+    "affiliation_ko": "한글누리연구소",
+    "affiliation_en": "Hangeulnuri Research Institute"
+  },
+  "greeting": {
+    "ko": "안녕하십니까?\n\n2026년 1월 1일부터 사단법인 훈민정음학회 제10대 회장을 맡게 된 이용입니다.\n\n훈민정음학회는 2007년 창립 이래 훈민정음과 문자에 관한 학술 연구의 중심으로서, 국내외 학자들이 연구 성과를 공유하고 교류하는 장을 마련해 왔습니다. 국제 전문 학술지 *Scripta*의 발간과 국내외 학술대회의 개최를 통해 학회의 학문적 기반을 다져 오신 선배 연구자 여러분과 역대 회장단, 임원진의 헌신과 노고에 깊이 감사드립니다. 아울러 학회의 안정적 운영과 발전을 위해 힘써 주신 이문호 이사장님께도 깊이 감사드립니다.\n\n훈민정음은 우리 민족의 자랑이자 인류의 소중한 문화유산입니다. 애민의 정신을 바탕으로 창제된 훈민정음은 과학성과 체계성을 겸비한 문자로서, 오늘날에도 다양한 언어를 표기할 수 있는 가능성을 지니고 있습니다. 이러한 훈민정음은 인류의 소통과 문화 발전에 지속적으로 기여할 수 있는 중요한 자산이라 생각합니다.\n\n앞으로 우리 학회는 훈민정음 연구의 심화를 도모하는 한편으로, 문자 보급과 활용에 관한 실천적 연구도 함께 추진해 나가고자 합니다. 이 과정에서 회원 여러분의 다양한 의견에 항상 귀 기울이며, 이를 학회 운영과 연구 방향에 충실히 반영하겠습니다. 학회는 구성원 모두의 참여 속에서 더욱 건강하게 발전할 수 있으리라고 믿습니다.\n\n아울러 국외에서 국제학술대회를 개최해 나가려고 합니다. 이를 통해 학문적 교류의 폭을 넓히고, 훈민정음과 문자 연구의 국제적 확산에 기여할 수 있기를 기대합니다. 또한 학술지의 질적 향상과 국제적 위상 제고, 그리고 국내외 학술 교류의 확대를 통해 학회의 역할을 한층 강화해 나가겠습니다.\n\n회원 여러분의 지속적인 관심과 참여를 부탁드리며, 앞으로도 건필하시기를 기원합니다.",
+    "en": "Greetings,\n\nMy name is Yong Lee, and I have assumed the position of the 10th President of the Hunminjeongeum Society as of January 1, 2026.\n\nSince its establishment in 2007, the Hunminjeongeum Society has served as a central platform for scholarly research on Hunminjeongeum and writing systems, providing opportunities for scholars both in Korea and abroad to share their research outcomes and engage in academic exchange. I would like to express my sincere gratitude to the senior scholars, former presidents and executive members whose dedication and efforts have laid a strong academic foundation for the Society through the publication of the international academic journal *Scripta* and the organization of domestic and international conferences. I also extend my deep appreciation to Chairman Moon-ho Lee for his commitment to the stable operation and development of the Society.\n\nHunminjeongeum is a source of pride for the Korean people and a valuable cultural heritage of humanity. Created on the basis of a spirit of compassion for the people, it is a writing system characterized by both scientific principles and systematic structure. Even today, it holds the potential to represent a wide range of languages. On this basis, I believe Hunminjeongeum can continue to contribute meaningfully to human communication and cultural development.\n\nMoving forward, our Society will strive to deepen research on Hunminjeongeum while also promoting practical studies on the dissemination and application of writing systems. In particular, we will listen carefully to the diverse opinions of our members and faithfully reflect them in the Society’s operations and research directions. I believe that the Society can develop in a healthy and sustainable manner through the active participation of all its members.\n\nIn addition, we plan to continue hosting international academic conferences abroad. Through this event, we hope to broaden the scope of academic exchange and contribute to the global dissemination of research on Hunminjeongeum and writing systems. We will also continue to enhance the quality of our journal, strengthen its international standing, and expand both domestic and international academic collaboration.\n\nI kindly ask for your continued interest and participation, and I wish you continued success in your writing.\n\nThank you.",
+    "date_ko": "2026년 6월",
+    "date_en": "June 2026"
+  },
+  "officers": [
+    {
+      "role_ko": "이사장",
+      "role_en": "Chairman",
+      "people": [
+        {
+          "name_ko": "이문호",
+          "name_en": "Moon-ho Lee",
+          "affiliation_ko": "",
+          "affiliation_en": ""
+        }
+      ]
+    },
+    {
+      "role_ko": "회장",
+      "role_en": "President",
+      "people": [
+        {
+          "name_ko": "이용",
+          "name_en": "Yong Lee",
+          "affiliation_ko": "한글누리연구소",
+          "affiliation_en": "Hangeulnuri Research Institute"
+        }
+      ]
+    },
+    {
+      "role_ko": "부회장",
+      "role_en": "Vice-President",
+      "people": [
+        {
+          "name_ko": "박진호",
+          "name_en": "Park Jinho",
+          "affiliation_ko": "서울대",
+          "affiliation_en": "Seoul National University"
+        }
+      ]
+    },
+    {
+      "role_ko": "총무이사",
+      "role_en": "Secretary General",
+      "people": [
+        {
+          "name_ko": "오현아",
+          "name_en": "Oh Hyeonah",
+          "affiliation_ko": "강원대",
+          "affiliation_en": "Kangwon National University"
+        }
+      ]
+    },
+    {
+      "role_ko": "편집이사",
+      "role_en": "Editorial Directors",
+      "people": [
+        {
+          "name_ko": "박진호",
+          "name_en": "Park Jinho",
+          "affiliation_ko": "편집위원장 · 서울대",
+          "affiliation_en": "Editor-in-Chief · Seoul National University"
+        },
+        {
+          "name_ko": "신용권",
+          "name_en": "Shin Yongkwon",
+          "affiliation_ko": "인천대",
+          "affiliation_en": "Incheon National University"
+        },
+        {
+          "name_ko": "강희조",
+          "name_en": "Kang Heejo",
+          "affiliation_ko": "전남대",
+          "affiliation_en": "Chonnam National University"
+        }
+      ]
+    },
+    {
+      "role_ko": "학술이사",
+      "role_en": "Academic Directors",
+      "people": [
+        {
+          "name_ko": "황선엽",
+          "name_en": "Hwang Seonyeop",
+          "affiliation_ko": "학술위원장 · 서울대",
+          "affiliation_en": "Chair · Seoul National University"
+        },
+        {
+          "name_ko": "박시균",
+          "name_en": "Park See-Gyoon",
+          "affiliation_ko": "군산대",
+          "affiliation_en": "Kunsan National University"
+        },
+        {
+          "name_ko": "허인영",
+          "name_en": "Heo Inyeong",
+          "affiliation_ko": "인하대",
+          "affiliation_en": "Inha University"
+        },
+        {
+          "name_ko": "문현수",
+          "name_en": "Mun Hyeonsu",
+          "affiliation_ko": "수원대",
+          "affiliation_en": "University of Suwon"
+        }
+      ]
+    },
+    {
+      "role_ko": "연구이사",
+      "role_en": "Research Directors",
+      "people": [
+        {
+          "name_ko": "이진호",
+          "name_en": "Lee Jinho",
+          "affiliation_ko": "서울대",
+          "affiliation_en": "Seoul National University"
+        },
+        {
+          "name_ko": "김유범",
+          "name_en": "Kim Yubeom",
+          "affiliation_ko": "고려대",
+          "affiliation_en": "Korea University"
+        },
+        {
+          "name_ko": "이상신",
+          "name_en": "Lee Sangsin",
+          "affiliation_ko": "아주대",
+          "affiliation_en": "Ajou University"
+        }
+      ]
+    },
+    {
+      "role_ko": "홍보이사",
+      "role_en": "Public Relations Directors",
+      "people": [
+        {
+          "name_ko": "전순환",
+          "name_en": "Jeon Sunhwan",
+          "affiliation_ko": "서울대",
+          "affiliation_en": "Seoul National University"
+        },
+        {
+          "name_ko": "성우철",
+          "name_en": "Seong Woocheol",
+          "affiliation_ko": "한중연",
+          "affiliation_en": "Academy of Korean Studies"
+        }
+      ]
+    },
+    {
+      "role_ko": "정보이사",
+      "role_en": "Information Directors",
+      "people": [
+        {
+          "name_ko": "최운호",
+          "name_en": "Choi Unho",
+          "affiliation_ko": "목포대",
+          "affiliation_en": "Mokpo National University"
+        },
+        {
+          "name_ko": "고성익",
+          "name_en": "Ko Seongik",
+          "affiliation_ko": "한글누리연구소",
+          "affiliation_en": "Hangeulnuri Research Institute"
+        }
+      ]
+    },
+    {
+      "role_ko": "출판이사",
+      "role_en": "Publication Directors",
+      "people": [
+        {
+          "name_ko": "이병기",
+          "name_en": "Lee Byeonggi",
+          "affiliation_ko": "한림대",
+          "affiliation_en": "Hallym University"
+        },
+        {
+          "name_ko": "이준환",
+          "name_en": "Lee Junhwan",
+          "affiliation_ko": "전남대",
+          "affiliation_en": "Chonnam National University"
+        },
+        {
+          "name_ko": "고은숙",
+          "name_en": "Ko Eunsuk",
+          "affiliation_ko": "국립한글박물관",
+          "affiliation_en": "National Hangeul Museum"
+        }
+      ]
+    },
+    {
+      "role_ko": "재무이사",
+      "role_en": "Finance Directors",
+      "people": [
+        {
+          "name_ko": "이지영",
+          "name_en": "Lee Jiyoung",
+          "affiliation_ko": "서강대",
+          "affiliation_en": "Sogang University"
+        },
+        {
+          "name_ko": "박상철",
+          "name_en": "Park Sangchul",
+          "affiliation_ko": "서울대",
+          "affiliation_en": "Seoul National University"
+        }
+      ]
+    },
+    {
+      "role_ko": "국제이사",
+      "role_en": "International Directors",
+      "people": [
+        {
+          "name_ko": "연재훈",
+          "name_en": "Jaehoon Yeon",
+          "affiliation_ko": "전 SOAS",
+          "affiliation_en": "formerly SOAS, University of London"
+        },
+        {
+          "name_ko": "고성연",
+          "name_en": "Seongyeon Ko",
+          "affiliation_ko": "CUNY",
+          "affiliation_en": "CUNY"
+        },
+        {
+          "name_ko": "가와사키 케이고",
+          "name_en": "KAWASAKI Keigo",
+          "affiliation_ko": "도쿄대",
+          "affiliation_en": "University of Tokyo"
+        },
+        {
+          "name_ko": "안영희",
+          "name_en": "An Yeonghui",
+          "affiliation_ko": "운남민족대",
+          "affiliation_en": "Yunnan Minzu University"
+        }
+      ]
+    },
+    {
+      "role_ko": "자문위원 (명예이사)",
+      "role_en": "Advisory Members (Honorary Directors)",
+      "people": [
+        {
+          "name_ko": "김주원",
+          "name_en": "Kim Juwon",
+          "affiliation_ko": "",
+          "affiliation_en": ""
+        },
+        {
+          "name_ko": "백두현",
+          "name_en": "Paek Doohyun",
+          "affiliation_ko": "",
+          "affiliation_en": ""
+        },
+        {
+          "name_ko": "이승재",
+          "name_en": "Lee SeungJae",
+          "affiliation_ko": "",
+          "affiliation_en": ""
+        },
+        {
+          "name_ko": "이현희",
+          "name_en": "Lee Hyeonhie",
+          "affiliation_ko": "",
+          "affiliation_en": ""
+        },
+        {
+          "name_ko": "한재영",
+          "name_en": "Han Jaeyeong",
+          "affiliation_ko": "",
+          "affiliation_en": ""
+        },
+        {
+          "name_ko": "고동호",
+          "name_en": "Ko Dongho",
+          "affiliation_ko": "",
+          "affiliation_en": ""
+        },
+        {
+          "name_ko": "장윤희",
+          "name_en": "Jang Yunhui",
+          "affiliation_ko": "",
+          "affiliation_en": ""
+        },
+        {
+          "name_ko": "박한상",
+          "name_en": "Park Hansang",
+          "affiliation_ko": "",
+          "affiliation_en": ""
+        }
+      ]
+    },
+    {
+      "role_ko": "연구윤리위원회",
+      "role_en": "Research Ethics Committee",
+      "people": [
+        {
+          "name_ko": "김성주",
+          "name_en": "Kim Seongju",
+          "affiliation_ko": "동국대",
+          "affiliation_en": "Dongguk University"
+        },
+        {
+          "name_ko": "구본관",
+          "name_en": "Koo Bonkwan",
+          "affiliation_ko": "서울대",
+          "affiliation_en": "Seoul National University"
+        },
+        {
+          "name_ko": "정승혜",
+          "name_en": "Jeong Seunghye",
+          "affiliation_ko": "수원여대",
+          "affiliation_en": "Suwon Women’s University"
+        },
+        {
+          "name_ko": "김양진",
+          "name_en": "Kim Yangjin",
+          "affiliation_ko": "경희대",
+          "affiliation_en": "Kyung Hee University"
+        }
+      ]
+    }
+  ],
+  "editorial_board": {
+    "term": "2012–2014 (갱신 필요)",
+    "editors": [
+      {
+        "name": "Kim Juwon",
+        "affiliation": "Seoul National University, Korea"
+      },
+      {
+        "name": "Zev Handel",
+        "affiliation": "University of Washington, USA"
+      }
+    ],
+    "members": [
+      {
+        "name": "James P. Allen",
+        "affiliation": "Brown University, USA"
+      },
+      {
+        "name": "Bae Chul-Hyun",
+        "affiliation": "Seoul National University, Korea"
+      },
+      {
+        "name": "Chinggeltei (淸格爾泰)",
+        "affiliation": "Inner Mongolia University, China"
+      },
+      {
+        "name": "Florian Coulmas",
+        "affiliation": "German Institute of Japanese Studies, Germany"
+      },
+      {
+        "name": "John Huehnergard",
+        "affiliation": "University of Texas at Austin, USA"
+      },
+      {
+        "name": "Juha Janhunen",
+        "affiliation": "University of Helsinki, Finland"
+      },
+      {
+        "name": "Young-Key Kim-Renaud",
+        "affiliation": "George Washington University, USA"
+      },
+      {
+        "name": "Lee Ki-Moon",
+        "affiliation": "Seoul National University, Korea"
+      },
+      {
+        "name": "Li Ling (李零)",
+        "affiliation": "Peking University, China"
+      },
+      {
+        "name": "Katsuya Onishi (大西克也)",
+        "affiliation": "University of Tokyo, Japan"
+      },
+      {
+        "name": "Park Jinho",
+        "affiliation": "Seoul National University, Korea"
+      },
+      {
+        "name": "Asko Parpola",
+        "affiliation": "University of Helsinki, Finland"
+      },
+      {
+        "name": "Barry B. Powell",
+        "affiliation": "University of Wisconsin-Madison, USA"
+      },
+      {
+        "name": "S. Robert Ramsey",
+        "affiliation": "University of Maryland, USA"
+      },
+      {
+        "name": "Andrew Robinson",
+        "affiliation": "Eton College, England"
+      },
+      {
+        "name": "Denise Schmandt-Besserat",
+        "affiliation": "University of Texas at Austin, USA"
+      },
+      {
+        "name": "J. Marshall Unger",
+        "affiliation": "Ohio State University, USA"
+      },
+      {
+        "name": "John Whitman",
+        "affiliation": "Cornell University, USA & NINJAL, Japan"
+      }
+    ]
+  },
+  "contact": {
+    "person_ko": "오현아 교수",
+    "person_en": "Prof. Oh Hyeonah",
+    "postcode": "24341",
+    "address_ko": "강원특별자치도 춘천시 강원대학길 1, 강원대학교 교육2호관 213호",
+    "address_en": "Korean language education office, 213ho, Gyoyug2hogwan, 1, Kangwondaehak-gil, Chuncheon-si, Gangwon-do, Republic of Korea",
+    "phone": "",
+    "email_submission": "scripta08@gmail.com",
+    "email_membership": "scripta.kr@gmail.com",
+    "email_general": ""
+  }
+}

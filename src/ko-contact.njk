@@ -1,0 +1,15 @@
+---
+layout: inner.njk
+lang: ko
+title: "연락처"
+permalink: /about/contact/
+---
+{%- set C = society.contact -%}{%- set I = i18n.ko -%}
+<div class="contact-table">
+  <div class="k">{{ I.contact_person }}</div><div>{{ C.person_ko }}</div>
+  <div class="k">{{ I.address }}</div><div>({{ C.postcode }}) {{ C.address_ko }}</div>
+  {% if C.phone %}<div class="k">{{ I.phone }}</div><div>{{ C.phone }}</div>{% endif %}
+  <div class="k">{{ I.submission }}</div><div><a href="mailto:{{ C.email_submission }}">{{ C.email_submission }}</a></div>
+  <div class="k">{{ I.membership }}</div><div><a href="mailto:{{ C.email_membership }}">{{ C.email_membership }}</a></div>
+  {% if C.email_general %}<div class="k">{{ I.general }}</div><div><a href="mailto:{{ C.email_general }}">{{ C.email_general }}</a></div>{% endif %}
+</div>

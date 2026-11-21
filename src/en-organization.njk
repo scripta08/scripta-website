@@ -1,0 +1,13 @@
+---
+layout: inner.njk
+lang: en
+title: "Organization"
+permalink: /en/about/organization/
+---
+<p style="color:var(--muted);margin:-12px 0 24px">{{ i18n.en.term }} {{ society.term.en }}</p>
+<div class="people">
+{%- for g in society.officers %}
+  <div class="role">{{ g.role_en }}</div>
+  <div>{% for p in g.people %}{{ p.name_en }}{% if p.affiliation_en %} ({{ p.affiliation_en }}){% endif %}{% if not loop.last %}, {% endif %}{% endfor %}</div>
+{%- endfor %}
+</div>

@@ -1,0 +1,16 @@
+---
+layout: base.njk
+---
+{%- set L = i18n[lang or "ko"] -%}
+<section class="page"><div class="wrap">
+  {%- for n in L.nav %}{% if n.children %}{% for c in n.children %}{% if c.url == page.url %}{% set group = n %}
+  <aside class="lnb"><h2>{{ n.label }}</h2>{% for k in n.children %}<a href="{{ k.url }}" class="{% if k.url == page.url %}on{% endif %}">{{ k.label }}</a>{% endfor %}</aside>
+  {% endif %}{% endfor %}{% endif %}{% endfor %}
+  <article class="content">
+    <h1>{{ title }}</h1>
+    <div class="prose">{{ content | safe }}</div>
+    {%- if files and files.length %}
+    <div class="files">{% for f in files %}<a href="{{ f.file }}"><span>{{ f.label }}</span><span>{{ "내려받기" if lang != "en" else "Download" }}</span></a>{% endfor %}</div>
+    {%- endif %}
+  </article>
+</div></section>

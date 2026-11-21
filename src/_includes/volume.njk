@@ -1,0 +1,16 @@
+---
+layout: base.njk
+---
+<section class="page"><div class="wrap">
+  <aside class="lnb"><h2>SCRIPTA</h2>{% for v in collections.volumes %}<a href="{{ v.url }}" class="{% if v.url == page.url %}on{% endif %}">Vol. {{ v.data.volume }} ({{ v.data.year }})</a>{% endfor %}</aside>
+  <article class="content">
+    <p class="eyebrow">SCRIPTA · {{ page.date | ymKo }}</p>
+    <h1 style="margin-top:8px">Vol. {{ volume }}</h1>
+    {{ content | safe }}
+    <ol class="rows">
+    {%- for a in articles %}
+      <li><span class="grow">{% if a.author %}<span style="display:block;font-size:14px;color:var(--muted)">{{ a.author }}</span>{% endif %}<span class="serif" style="font-size:17px;font-weight:600;color:var(--ink)">{{ a.title }}</span></span><a class="acc" href="{{ a.pdf }}">PDF</a></li>
+    {%- endfor %}
+    </ol>
+  </article>
+</div></section>

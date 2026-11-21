@@ -1,0 +1,13 @@
+---
+layout: inner.njk
+lang: ko
+title: "학회 조직"
+permalink: /about/organization/
+---
+<p style="color:var(--muted);margin:-12px 0 24px">{{ i18n.ko.term }} {{ society.term.ko }}</p>
+<div class="people">
+{%- for g in society.officers %}
+  <div class="role">{{ g.role_ko }}</div>
+  <div>{% for p in g.people %}{{ p.name_ko }}{% if p.affiliation_ko %} ({{ p.affiliation_ko }}){% endif %}{% if not loop.last %}, {% endif %}{% endfor %}</div>
+{%- endfor %}
+</div>

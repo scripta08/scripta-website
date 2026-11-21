@@ -1,0 +1,60 @@
+{%- set L = i18n[lang or "ko"] -%}
+<!doctype html>
+<html lang="{{ lang or 'ko' }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if title %}{{ title }} · {% endif %}{{ L.society }}</title>
+<link rel="icon" href="/assets/emblem.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/emblem-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<div class="util"><div class="wrap">
+  <span>{% if lang == "en" %}Founded on Hangeul Day, 2007{% else %}사단법인 훈민정음학회 · 2007년 설립{% endif %}</span>
+  <div class="lang">
+    <a href="/" class="{% if lang != 'en' %}on{% endif %}">한국어</a>
+    <a href="/en/" class="{% if lang == 'en' %}on{% endif %}">English</a>
+  </div>
+</div></div>
+<header class="masthead"><div class="wrap">
+  <a class="brand" href="{{ L.home }}">
+    <img src="/assets/emblem.svg" alt="">
+    <span class="t"><span class="n">{{ i18n.ko.society if lang != "en" else "The Hunmin jeongeum Society" }}</span><span class="s">{{ "THE HUNMIN JEONGEUM SOCIETY" if lang != "en" else "훈민정음학회" }}</span></span>
+  </a>
+  <details class="menu-toggle"><summary aria-label="{{ '메뉴' if lang != 'en' else 'Menu' }}"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h14M3 10h14M3 14h14"/></svg></summary></details>
+  <nav class="gnav" aria-label="{{ '주 메뉴' if lang != 'en' else 'Main' }}">
+    {%- for n in L.nav %}
+    {%- set ix = 2 if lang == "en" else 1 -%}{%- set seg = n.url.split("/")[ix] -%}
+    <div class="item{% if seg and page.url.split('/')[ix] == seg %} cur{% endif %}">
+
+      <a href="{{ n.url }}">{{ n.label }}</a>
+      {%- if n.children %}<div class="sub">{% for c in n.children %}<a href="{{ c.url }}">{{ c.label }}</a>{% endfor %}</div>{% endif %}
+    </div>
+    {%- endfor %}
+  </nav>
+</div></header>
+<div class="rule"></div>
+<main>
+{{ content | safe }}
+</main>
+{%- set C = society.contact -%}
+<footer class="site"><div class="wrap">
+  <div class="col">
+    <span class="nm">{{ L.society_full }}</span>
+    {% if lang == "en" %}<span>{{ C.person_en }}</span><span>({{ C.postcode }}) {{ C.address_en }}</span>{% else %}<span>{{ C.person_ko }}</span><span>({{ C.postcode }}) {{ C.address_ko }}</span>{% endif %}
+  </div>
+  <div class="col">
+    <span>{{ L.submission }} · <a href="mailto:{{ C.email_submission }}">{{ C.email_submission }}</a></span>
+    <span>{{ L.membership }} · <a href="mailto:{{ C.email_membership }}">{{ C.email_membership }}</a></span>
+    {% if C.email_general %}<span>{{ L.general }} · <a href="mailto:{{ C.email_general }}">{{ C.email_general }}</a></span>{% endif %}
+    {% if C.phone %}<span>{{ L.phone }} · {{ C.phone }}</span>{% endif %}
+  </div>
+  <div class="col" style="flex:1 1 160px">
+    {% if lang == "en" %}<a href="/en/about/organization/">Organization</a><a href="/en/about/contact/">Contact</a>{% else %}<a href="/about/bylaws/">정관(회칙)</a><a href="/about/organization/">학회 조직</a>{% endif %}
+  </div>
+</div></footer>
+</body>
+</html>
