@@ -1,0 +1,7 @@
+{
+  "name": "scripta-website",
+  "compatibility_date": "2026-11-21",
+  "assets": {
+    "directory": "./_site"
+  }
+}
