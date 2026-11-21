@@ -1,7 +1,9 @@
 {
   "name": "scripta-website",
+  "main": "worker/index.js",
   "compatibility_date": "2026-11-21",
   "assets": {
-    "directory": "./_site"
+    "directory": "./_site",
+    "binding": "ASSETS"
   }
 }

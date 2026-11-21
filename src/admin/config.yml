@@ -4,11 +4,11 @@ backend:
   name: github
   repo: scripta08/scripta-website
   branch: main
-  base_url: https://AUTH-WORKER.example # [GitHub 로그인 연결용 주소로 교체]
+  base_url: https://scripta-website.scripta-kr-7ed.workers.dev
 local_backend: true
 locale: ko
-site_url: https://www.scripta.kr
-display_url: https://www.scripta.kr
+site_url: https://scripta-website.scripta-kr-7ed.workers.dev
+display_url: https://scripta-website.scripta-kr-7ed.workers.dev
 media_folder: src/files/uploads
 public_folder: /files/uploads
 slug: { encoding: ascii, clean_accents: true }
