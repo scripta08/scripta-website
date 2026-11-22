@@ -6,7 +6,7 @@
   },
   "president": {
     "name_ko": "이용",
-    "name_en": "Yong Lee",
+    "name_en": "Lee Yong",
     "affiliation_ko": "한글누리연구소",
     "affiliation_en": "Hangeulnuri Research Institute"
   },
@@ -23,7 +23,7 @@
       "people": [
         {
           "name_ko": "이문호",
-          "name_en": "Moon-ho Lee",
+          "name_en": "Lee Mun-ho",
           "affiliation_ko": "",
           "affiliation_en": ""
         }
@@ -35,7 +35,7 @@
       "people": [
         {
           "name_ko": "이용",
-          "name_en": "Yong Lee",
+          "name_en": "Lee Yong",
           "affiliation_ko": "한글누리연구소",
           "affiliation_en": "Hangeulnuri Research Institute"
         }
@@ -47,7 +47,7 @@
       "people": [
         {
           "name_ko": "박진호",
-          "name_en": "Park Jinho",
+          "name_en": "Jinho Park",
           "affiliation_ko": "서울대",
           "affiliation_en": "Seoul National University"
         }
@@ -59,7 +59,7 @@
       "people": [
         {
           "name_ko": "오현아",
-          "name_en": "Oh Hyeonah",
+          "name_en": "Oh Hyeon-Ah",
           "affiliation_ko": "강원대",
           "affiliation_en": "Kangwon National University"
         }
@@ -71,19 +71,19 @@
       "people": [
         {
           "name_ko": "박진호",
-          "name_en": "Park Jinho",
+          "name_en": "Jinho Park",
           "affiliation_ko": "편집위원장 · 서울대",
           "affiliation_en": "Editor-in-Chief · Seoul National University"
         },
         {
           "name_ko": "신용권",
-          "name_en": "Shin Yongkwon",
+          "name_en": "Yong-Kwon Shin",
           "affiliation_ko": "인천대",
           "affiliation_en": "Incheon National University"
         },
         {
           "name_ko": "강희조",
-          "name_en": "Kang Heejo",
+          "name_en": "Hijo Kang",
           "affiliation_ko": "전남대",
           "affiliation_en": "Chonnam National University"
         }
@@ -95,25 +95,25 @@
       "people": [
         {
           "name_ko": "황선엽",
-          "name_en": "Hwang Seonyeop",
+          "name_en": "Hwang Seon-Yeop",
           "affiliation_ko": "학술위원장 · 서울대",
           "affiliation_en": "Chair · Seoul National University"
         },
         {
           "name_ko": "박시균",
-          "name_en": "Park See-Gyoon",
+          "name_en": "See-Gyoon Park",
           "affiliation_ko": "군산대",
           "affiliation_en": "Kunsan National University"
         },
         {
           "name_ko": "허인영",
-          "name_en": "Heo Inyeong",
+          "name_en": "Inyeong Heo",
           "affiliation_ko": "인하대",
           "affiliation_en": "Inha University"
         },
         {
           "name_ko": "문현수",
-          "name_en": "Mun Hyeonsu",
+          "name_en": "Moon Hyunsoo",
           "affiliation_ko": "수원대",
           "affiliation_en": "University of Suwon"
         }
@@ -125,13 +125,13 @@
       "people": [
         {
           "name_ko": "이진호",
-          "name_en": "Lee Jinho",
+          "name_en": "Lee Jin-Ho",
           "affiliation_ko": "서울대",
           "affiliation_en": "Seoul National University"
         },
         {
           "name_ko": "김유범",
-          "name_en": "Kim Yubeom",
+          "name_en": "Kim Yupum",
           "affiliation_ko": "고려대",
           "affiliation_en": "Korea University"
         },
@@ -149,13 +149,13 @@
       "people": [
         {
           "name_ko": "전순환",
-          "name_en": "Jeon Sunhwan",
+          "name_en": "Jun Soonhwan",
           "affiliation_ko": "서울대",
           "affiliation_en": "Seoul National University"
         },
         {
           "name_ko": "성우철",
-          "name_en": "Seong Woocheol",
+          "name_en": "Seong Wucheol",
           "affiliation_ko": "한중연",
           "affiliation_en": "Academy of Korean Studies"
         }
@@ -167,13 +167,13 @@
       "people": [
         {
           "name_ko": "최운호",
-          "name_en": "Choi Unho",
+          "name_en": "Choi Woonho",
           "affiliation_ko": "목포대",
           "affiliation_en": "Mokpo National University"
         },
         {
           "name_ko": "고성익",
-          "name_en": "Ko Seongik",
+          "name_en": "Ko Sung-ik",
           "affiliation_ko": "한글누리연구소",
           "affiliation_en": "Hangeulnuri Research Institute"
         }
@@ -191,13 +191,13 @@
         },
         {
           "name_ko": "이준환",
-          "name_en": "Lee Junhwan",
+          "name_en": "Yi Junhwan",
           "affiliation_ko": "전남대",
           "affiliation_en": "Chonnam National University"
         },
         {
           "name_ko": "고은숙",
-          "name_en": "Ko Eunsuk",
+          "name_en": "Ko Eunsook",
           "affiliation_ko": "국립한글박물관",
           "affiliation_en": "National Hangeul Museum"
         }
@@ -215,7 +215,7 @@
         },
         {
           "name_ko": "박상철",
-          "name_en": "Park Sangchul",
+          "name_en": "Sangchul Park",
           "affiliation_ko": "서울대",
           "affiliation_en": "Seoul National University"
         }
@@ -227,7 +227,7 @@
       "people": [
         {
           "name_ko": "연재훈",
-          "name_en": "Jaehoon Yeon",
+          "name_en": "Jae Hoon Yeon",
           "affiliation_ko": "전 SOAS",
           "affiliation_en": "formerly SOAS, University of London"
         },
@@ -245,7 +245,7 @@
         },
         {
           "name_ko": "안영희",
-          "name_en": "An Yeonghui",
+          "name_en": "An Yingji",
           "affiliation_ko": "운남민족대",
           "affiliation_en": "Yunnan Minzu University"
         }
@@ -263,7 +263,7 @@
         },
         {
           "name_ko": "백두현",
-          "name_en": "Paek Doohyun",
+          "name_en": "Paek Doo-hyeon",
           "affiliation_ko": "",
           "affiliation_en": ""
         },
@@ -275,31 +275,31 @@
         },
         {
           "name_ko": "이현희",
-          "name_en": "Lee Hyeonhie",
+          "name_en": "Lee Hyun-hee",
           "affiliation_ko": "",
           "affiliation_en": ""
         },
         {
           "name_ko": "한재영",
-          "name_en": "Han Jaeyeong",
+          "name_en": "Han Jae-Young",
           "affiliation_ko": "",
           "affiliation_en": ""
         },
         {
           "name_ko": "고동호",
-          "name_en": "Ko Dongho",
+          "name_en": "Dongho Ko",
           "affiliation_ko": "",
           "affiliation_en": ""
         },
         {
           "name_ko": "장윤희",
-          "name_en": "Jang Yunhui",
+          "name_en": "Jang Yoon-hee",
           "affiliation_ko": "",
           "affiliation_en": ""
         },
         {
           "name_ko": "박한상",
-          "name_en": "Park Hansang",
+          "name_en": "Hansang Park",
           "affiliation_ko": "",
           "affiliation_en": ""
         }
@@ -323,13 +323,13 @@
         },
         {
           "name_ko": "정승혜",
-          "name_en": "Jeong Seunghye",
+          "name_en": "Chung Seunghye",
           "affiliation_ko": "수원여대",
           "affiliation_en": "Suwon Women’s University"
         },
         {
           "name_ko": "김양진",
-          "name_en": "Kim Yangjin",
+          "name_en": "Kim Ryang-jin",
           "affiliation_ko": "경희대",
           "affiliation_en": "Kyung Hee University"
         }
